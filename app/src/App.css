@@ -1,0 +1,97 @@
+.App {
+	text-align: center;
+}
+
+html {
+	min-height: 1650px;
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(
+		top,
+		rgb(17, 188, 157),
+		rgb(13, 56, 112)
+	);
+}
+
+input {
+	width: 180px;
+	font-size: larger;
+	border-radius: 25%;
+}
+
+.Search {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+button {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	font-size: xx-large;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.del {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	font-size: large;
+	background-color: red;
+	clip-path: polygon(100% 100%, 100% 0%, 0% 0%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 8px 0 0;
+	transform: translateZ(20px);
+}
+
+.del span {
+	position: relative;
+	transform: translate(50%, -50%);
+	font-weight: bold;
+}
+
+.PokemonItem {
+	position: relative;
+	box-sizing: content-box;
+	width: 200px;
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(bottom, orange, purple);
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+}
+
+ul {
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	align-items: center;
+}
+
+li {
+	display: flex;
+	flex-direction: row;
+}
+
+img {
+	transform: translateZ(30px);
+}
+
+/* .warn {
+	position: absolute;
+	top: 6%;
+	right: 5%;
+	color: red;
+	background-color: #fff;
+	border-radius: 10%;
+	font-size: large;
+} */
